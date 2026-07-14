@@ -44,19 +44,19 @@
     slot.appendChild(inner);
   });
 
-  // Smart guide link: jump to relevant section based on current tool page
+  // Smart guide link: jump to tool-specific guide page based on current tool page
   const guideLink = document.querySelector('[data-guide-link]');
   if (guideLink) {
     var toolMap = {
-      'image-converter': '#image-converter',
-      'pdf-converter': '#pdf-converter',
-      'media-converter': '#media-converter',
-      'unit-converter': '#unit-converter',
-      'compress-tool': '#compress-tool'
+      'image-converter': '/guide/image-converter.html',
+      'pdf-converter': '/guide/pdf-converter.html',
+      'media-converter': '/guide/media-converter.html',
+      'unit-converter': '/guide/unit-converter.html',
+      'compress-tool': '/guide/compress-tool.html'
     };
     for (var key in toolMap) {
       if (path.indexOf(key) !== -1) {
-        guideLink.href = '/guide.html' + toolMap[key];
+        guideLink.href = toolMap[key];
         break;
       }
     }
