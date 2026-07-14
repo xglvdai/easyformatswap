@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Online Image Converter — JPG PNG WebP HEIC | Convertly</title>
+  <meta name="description" content="Convert JPG, PNG, WebP and HEIC images in your browser. Resize and compress — fully private, no uploads." />
+  <link rel="canonical" href="https://easyformatswap.com/tools/image-converter.html" />
+  <meta property="og:title" content="Free Online Image Converter — JPG PNG WebP HEIC" />
+  <meta property="og:description" content="Convert JPG, PNG, WebP and HEIC images in your browser. Resize and compress — fully private, no uploads." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://easyformatswap.com/tools/image-converter.html" />
+  <meta property="og:site_name" content="Convertly" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Free Online Image Converter — JPG PNG WebP HEIC" />
+  <meta name="twitter:description" content="Convert JPG, PNG, WebP and HEIC images in your browser. Resize and compress — fully private, no uploads." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Image Converter",
+    "url": "https://easyformatswap.com/tools/image-converter.html",
+    "description": "Free online image converter — convert JPG, PNG, WebP and HEIC in your browser. Resize and compress images privately.",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "All",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index.html">
+        <span class="logo">⚡</span><span>Convertly</span>
+      </a>
+      <nav class="nav-links" data-nav-links aria-label="Primary">
+        <a href="/index.html">Home</a>
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="/tools/image-converter.html" aria-haspopup="true">Tools ▾</a>
+          <div class="dropdown-menu">
+            <a href="/tools/image-converter.html"><span class="ico">🖼️</span> Image Converter</a>
+            <a href="/tools/pdf-converter.html"><span class="ico">📄</span> PDF Converter</a>
+            <a href="/tools/media-converter.html"><span class="ico">🎬</span> Media Converter</a>
+            <a href="/tools/unit-converter.html"><span class="ico">📐</span> Unit Converter</a>
+            <a href="/tools/compress-tool.html"><span class="ico">🗜️</span> Compress Tool</a>
+          </div>
+        </div>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">☰</button>
+    </div>
+    <div class="ad-banner-top">
+      <div class="container" style="padding:8px 24px">
+        <aside class="ad-slot ad-leaderboard" data-ad-format="leaderboard"
+               data-ad-label="Top banner — connect Google AdSense"></aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <!-- ===== Page ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head" style="text-align:left;margin:0 0 24px;max-width:none">
+        <span class="eyebrow">Image Converter</span>
+        <h2>Convert &amp; compress images</h2>
+        <p>JPG · PNG · WebP · HEIC. Everything stays on your device.</p>
+      </div>
+
+      <div class="tool-layout">
+        <!-- Main -->
+        <div>
+          <div class="panel">
+            <div class="uploader" id="uploader">
+              <div class="u-ico">🖼️</div>
+              <div class="u-title">Drop images here</div>
+              <div class="u-sub">or click to browse · JPG, PNG, WebP, HEIC</div>
+              <input type="file" id="fileInput" accept="image/*,.heic,.heif" multiple hidden />
+            </div>
+            <div class="file-list" id="fileList"></div>
+          </div>
+
+          <div class="panel">
+            <div class="field">
+              <label for="format">Output format</label>
+              <select id="format">
+                <option value="image/png">PNG</option>
+                <option value="image/jpeg" selected>JPEG (JPG)</option>
+                <option value="image/webp">WebP</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="quality">Quality <span id="qualityVal" class="muted">85%</span></label>
+              <div class="range-row">
+                <input type="range" id="quality" min="10" max="100" value="85" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="maxDim">Max dimension (px, optional)</label>
+              <input type="number" id="maxDim" placeholder="e.g. 1920 — leave blank to keep size" min="16" />
+            </div>
+
+            <button class="btn btn-primary btn-block btn-lg" id="convertBtn">Convert images</button>
+            <div class="progress" id="progress"><span></span></div>
+            <div class="status" id="status"></div>
+
+            <div id="results"></div>
+          </div>
+        </div>
+
+        <!-- Sidebar ad -->
+        <aside class="sidebar-ad">
+          <div class="ad-slot ad-rectangle" data-ad-format="rectangle"
+               data-ad-label="Sidebar — connect Google AdSense"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container" style="padding-top:32px">
+      <aside class="ad-slot ad-leaderboard" data-ad-format="leaderboard"
+             data-ad-label="Footer banner — connect Google AdSense"></aside>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="/index.html" style="color:#fff"><span class="logo">⚡</span><span>Convertly</span></a>
+        <p style="margin-top:12px;color:#94A3B8;font-size:14px;max-width:300px">Free, private format converters that run entirely in your browser.</p>
+      </div>
+      <div><h4>Tools</h4><ul>
+        <li><a href="/tools/image-converter.html">Image Converter</a></li>
+        <li><a href="/tools/pdf-converter.html">PDF Converter</a></li>
+        <li><a href="/tools/media-converter.html">Media Converter</a></li>
+        <li><a href="/tools/unit-converter.html">Unit Converter</a></li>
+        <li><a href="/tools/compress-tool.html">Compress Tool</a></li>
+      </ul></div>
+
+      <div><h4>Advertising</h4><ul>
+        <li><a href="#">Ad Choices</a></li><li><span style="font-size:14px;color:#94A3B8">Ads by Google AdSense</span></li>
+      </ul></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Convertly. All rights reserved.</span>
+      <span>Processed locally in your browser · We never upload your files.</span>
+    </div>
+  </footer>
+
+  <!-- HEIC decode (libheif WebAssembly bundle) + image compression -->
+  <script src="https://cdn.jsdelivr.net/npm/libheif-js@1.19.8/libheif-wasm/libheif-bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.js"></script>
+  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/image-converter.js"></script>
+</body>
+</html>
