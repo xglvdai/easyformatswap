@@ -122,46 +122,6 @@
 }
 
 /* ============================================================
-   Top banner ad (under nav)
-   ============================================================ */
-.ad-banner-top {
-  background: var(--c-ad-bg);
-  border-bottom: 1px solid var(--c-ad-border);
-}
-
-/* ============================================================
-   Ad slots (generic)
-   ============================================================ */
-.ad-slot {
-  position: relative;
-  background: var(--c-ad-bg);
-  border: 1px dashed var(--c-border-strong);
-  border-radius: var(--r-md);
-  display: grid;
-  place-items: center;
-  color: var(--c-text-faint);
-  text-align: center;
-  overflow: hidden;
-  min-height: 100px;
-  font-size: 13px;
-}
-.ad-slot::before {
-  content: "Advertisement";
-  position: absolute; top: 6px; left: 10px;
-  font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--c-text-faint);
-}
-.ad-slot .ad-placeholder { padding: 28px 16px 16px; }
-.ad-leaderboard { min-height: 90px; }
-.ad-rectangle { min-height: 250px; width: 100%; }
-.ad-showcase { min-height: 280px; }
-
-/* Sidebar sticky ad on desktop */
-@media (min-width: 981px) {
-  .sidebar-ad { position: sticky; top: calc(var(--nav-h) + var(--s-4)); }
-}
-
-/* ============================================================
    Hero
    ============================================================ */
 .hero {
@@ -375,38 +335,4 @@
 .sec-head h2 { margin: var(--s-3) 0; }
 .sec-head p { color: var(--c-text-muted); }
 
-/* ============================================================
-   Cookie consent banner
-   ============================================================ */
-.cookie-banner {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  z-index: 9999;
-  background: #fff;
-  border-top: 2px solid var(--c-primary);
-  box-shadow: 0 -8px 32px rgba(15,23,42,.15);
-  padding: var(--s-4) var(--s-5);
-  display: none;
-}
-.cookie-banner.show { display: block; }
-.cookie-banner .cb-inner {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s-4);
-  flex-wrap: wrap;
-}
-.cookie-banner .cb-text {
-  font-size: 14px;
-  color: var(--c-text-muted);
-  max-width: 700px;
-  line-height: 1.6;
-}
-.cookie-banner .cb-text strong { color: var(--c-text); }
-.cookie-banner .cb-text a { font-weight: 600; text-decoration: underline; }
-.cookie-banner .cb-btns {
-  display: flex; gap: var(--s-2); flex-wrap: wrap; flex-shrink: 0;
-}
-.cookie-banner .cb-btns .btn { font-size: 14px; padding: 10px 20px; }
+

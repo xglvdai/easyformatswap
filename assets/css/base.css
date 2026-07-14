@@ -26,10 +26,6 @@
   --c-border: #E2E8F0;
   --c-border-strong: #CBD5E1;
 
-  /* Ad slot */
-  --c-ad-bg: #F1F5F9;
-  --c-ad-border: #E2E8F0;
-
   /* Radius */
   --r-sm: 8px;
   --r-md: 14px;
@@ -128,15 +124,9 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: var(--r-full);
 }
 
-/* Tool page two-column layout: content + sidebar ad */
+/* Tool page full-width layout */
 .tool-layout {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: var(--s-6);
-  align-items: start;
-}
-@media (max-width: 980px) {
-  .tool-layout { grid-template-columns: 1fr; }
+  max-width: 860px;
 }
 
 /* ============================================================
