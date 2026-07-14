@@ -44,6 +44,24 @@
     slot.appendChild(inner);
   });
 
+  // Smart guide link: jump to relevant section based on current tool page
+  const guideLink = document.querySelector('[data-guide-link]');
+  if (guideLink) {
+    var toolMap = {
+      'image-converter': '#image-converter',
+      'pdf-converter': '#pdf-converter',
+      'media-converter': '#media-converter',
+      'unit-converter': '#unit-converter',
+      'compress-tool': '#compress-tool'
+    };
+    for (var key in toolMap) {
+      if (path.indexOf(key) !== -1) {
+        guideLink.href = '/guide.html' + toolMap[key];
+        break;
+      }
+    }
+  }
+
   // Cookie consent banner
   // US CCPA / EU ePrivacy-compliant: shown until user accepts.
   // AdSense requires consent for personalized ads.
