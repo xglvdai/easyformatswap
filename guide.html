@@ -1,52 +1,37 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>使用说明 — easyformatswap</title>
-  <meta name="description" content="easyformatswap 全部工具的使用说明：图片转换、PDF转换、媒体转换、单位换算、文件压缩。" />
+  <title>User Guide — How to Use All easyformatswap Tools</title>
+  <meta name="description" content="Complete user guides for all easyformatswap tools: Image Converter, PDF Converter, Media Converter, Unit Converter, and Compress Tool. Step-by-step instructions with tips." />
   <link rel="canonical" href="https://easyformatswap.com/guide.html" />
-  <meta property="og:title" content="使用说明 — easyformatswap" />
-  <meta property="og:description" content="easyformatswap 全部工具的使用说明，含图文步骤和常见问题。" />
+  <meta property="og:title" content="User Guide — How to Use All easyformatswap Tools" />
+  <meta property="og:description" content="Step-by-step guides for Image Converter, PDF Converter, Media Converter, Unit Converter, and Compress Tool. Private in-browser processing." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://easyformatswap.com/guide.html" />
   <meta property="og:site_name" content="easyformatswap" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="使用说明 — easyformatswap" />
-  <meta name="twitter:description" content="easyformatswap 全部工具的使用说明，含图文步骤和常见问题。" />
+  <meta name="twitter:title" content="User Guide — easyformatswap" />
+  <meta name="twitter:description" content="Step-by-step guides for all easyformatswap tools. Private in-browser processing." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "使用说明 — easyformatswap",
+    "name": "User Guide — easyformatswap",
     "url": "https://easyformatswap.com/guide.html",
-    "description": "easyformatswap 全部工具的使用说明，含图文步骤和常见问题。"
+    "description": "Complete user guides for all easyformatswap tools with step-by-step instructions, format comparisons, and pro tips."
   }
   </script>
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
   <style>
-    .guide-nav { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--c-border); padding: 12px 0; margin-bottom: 32px; }
-    .guide-nav-inner { display: flex; flex-wrap: wrap; gap: 8px; }
-    .guide-nav a { display: inline-block; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--c-text); background: var(--c-bg-soft); text-decoration: none; transition: all .2s; }
-    .guide-nav a:hover, .guide-nav a:focus { background: var(--c-primary-soft); color: var(--c-primary); }
-    .guide-section { scroll-margin-top: 80px; margin-bottom: 48px; }
-    .guide-section h2 { font-size: 28px; margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
-    .guide-section h2 .ico { font-size: 32px; }
-    .guide-card { background: #fff; border: 1px solid var(--c-border); border-radius: 12px; padding: 28px 32px; margin-bottom: 20px; }
-    .guide-card h3 { font-size: 18px; margin-bottom: 10px; color: var(--c-primary); }
-    .guide-card p, .guide-card li { font-size: 14px; line-height: 1.8; color: var(--c-text); margin-bottom: 6px; }
-    .guide-card ul, .guide-card ol { padding-left: 20px; margin-bottom: 12px; }
-    .guide-card li { margin-bottom: 4px; }
-    .guide-step { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
-    .guide-step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--c-primary); color: #fff; display: grid; place-items: center; font-size: 14px; font-weight: 700; flex: none; margin-top: 2px; }
-    .guide-tip { background: #F0FDF4; border-left: 4px solid #22C55E; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 13px; color: #166534; }
-    .guide-warn { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 13px; color: #92400E; }
-    .guide-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
-    .guide-table th, .guide-table td { border: 1px solid var(--c-border); padding: 8px 12px; text-align: left; }
-    .guide-table th { background: var(--c-bg-soft); font-weight: 600; }
-    .guide-back-top { text-align: right; margin-top: 16px; }
-    .guide-back-top a { font-size: 13px; color: var(--c-primary); text-decoration: none; }
+    .guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 32px; }
+    .guide-card-link { background: #fff; border: 1px solid var(--c-border); border-radius: 12px; padding: 28px; text-decoration: none; color: var(--c-text); transition: all .2s; display: block; }
+    .guide-card-link:hover { border-color: var(--c-primary); box-shadow: 0 4px 20px rgba(0,0,0,.08); transform: translateY(-2px); }
+    .guide-card-link h3 { font-size: 18px; margin-bottom: 8px; color: var(--c-primary); display: flex; align-items: center; gap: 10px; }
+    .guide-card-link p { font-size: 13px; color: var(--c-text-muted); line-height: 1.6; margin-bottom: 12px; }
+    .guide-card-link .tag { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 500; background: var(--c-bg-soft); color: var(--c-text-muted); margin-right: 4px; }
   </style>
 </head>
 <body>
@@ -67,7 +52,7 @@
             <a href="/tools/compress-tool.html"><span class="ico">🗜️</span> Compress Tool</a>
           </div>
         </div>
-        <a href="/guide.html" data-guide-link>使用说明</a>
+        <a href="/guide.html" data-guide-link>User Guide</a>
         <a href="/contact.html">Contact</a>
       </nav>
       <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">☰</button>
@@ -83,206 +68,38 @@
   <section class="section">
     <div class="container">
       <div class="sec-head" style="text-align:left;margin:0 0 8px;max-width:none">
-        <span class="eyebrow">User Guide</span>
-        <h2>使用说明</h2>
-        <p>以下是 easyformatswap 全部五个工具的详细使用说明，包括操作步骤、支持的格式以及常见问题。</p>
+        <span class="eyebrow">Documentation</span>
+        <h2>User Guide</h2>
+        <p>Detailed how-to guides for every easyformatswap tool. Each guide includes step-by-step instructions, format comparisons, pro tips, and things to watch out for.</p>
       </div>
 
-      <!-- Quick nav pills -->
-      <div class="guide-nav">
-        <div class="guide-nav-inner">
-          <a href="#image-converter">🖼️ 图片转换</a>
-          <a href="#pdf-converter">📄 PDF转换</a>
-          <a href="#media-converter">🎬 媒体转换</a>
-          <a href="#unit-converter">📐 单位换算</a>
-          <a href="#compress-tool">🗜️ 文件压缩</a>
-        </div>
+      <div class="guide-grid">
+        <a href="/guide/image-converter.html" class="guide-card-link">
+          <h3>🖼️ Image Converter</h3>
+          <p>Convert JPG, PNG, WebP, and HEIC images. Batch processing with quality and resize controls.</p>
+          <div><span class="tag">JPG</span><span class="tag">PNG</span><span class="tag">WebP</span><span class="tag">HEIC</span></div>
+        </a>
+        <a href="/guide/pdf-converter.html" class="guide-card-link">
+          <h3>📄 PDF Converter</h3>
+          <p>Three modes: PDF to images, PDF to text extraction, and merge images into a single PDF.</p>
+          <div><span class="tag">PDF&rarr;Image</span><span class="tag">PDF&rarr;Text</span><span class="tag">Merge</span></div>
+        </a>
+        <a href="/guide/media-converter.html" class="guide-card-link">
+          <h3>🎬 Media Converter</h3>
+          <p>Convert video and audio between MP4, MP3, WebM, WAV, and M4A. Powered by ffmpeg.wasm.</p>
+          <div><span class="tag">MP4</span><span class="tag">MP3</span><span class="tag">WebM</span><span class="tag">WAV</span></div>
+        </a>
+        <a href="/guide/unit-converter.html" class="guide-card-link">
+          <h3>📐 Unit Converter</h3>
+          <p>Convert length, weight, temperature, and currency with real-time bidirectional calculation.</p>
+          <div><span class="tag">Length</span><span class="tag">Weight</span><span class="tag">Temp</span><span class="tag">Currency</span></div>
+        </a>
+        <a href="/guide/compress-tool.html" class="guide-card-link">
+          <h3>🗜️ Compress Tool</h3>
+          <p>Compress images and PDFs while preserving quality. Adjustable compression level with size comparison.</p>
+          <div><span class="tag">Images</span><span class="tag">PDF</span></div>
+        </a>
       </div>
-
-      <!-- ==================== Image Converter ==================== -->
-      <div class="guide-section" id="image-converter">
-        <h2><span class="ico">🖼️</span> 图片转换器 (Image Converter)</h2>
-        <p style="color:var(--c-text-muted);margin-bottom:24px">支持的格式：JPG · PNG · WebP · HEIC &mdash; 所有处理均在浏览器本地完成，文件不会上传。</p>
-
-        <div class="guide-card">
-          <h3>📋 操作步骤</h3>
-          <div class="guide-step"><div class="guide-step-num">1</div><div><strong>拖入或选择图片</strong> — 点击上传区域或将图片文件拖拽到虚线框内。支持一次选择多张图片批量处理。</div></div>
-          <div class="guide-step"><div class="guide-step-num">2</div><div><strong>选择输出格式</strong> — 在下拉菜单中选择目标格式：PNG、JPEG(JPG)、或 WebP。</div></div>
-          <div class="guide-step"><div class="guide-step-num">3</div><div><strong>调整质量（可选）</strong> — 拖动质量滑块（10%–100%）。数值越高文件越大但画质越好，默认 85% 是推荐平衡点。</div></div>
-          <div class="guide-step"><div class="guide-step-num">4</div><div><strong>设置最大尺寸（可选）</strong> — 如需缩小图片，输入最大像素值（如 1920）。留空则保持原始尺寸。</div></div>
-          <div class="guide-step"><div class="guide-step-num">5</div><div><strong>点击转换</strong> — 点击「Convert images」按钮，等待进度条完成，即可下载转换后的图片。</div></div>
-        </div>
-
-        <div class="guide-card">
-          <h3>📊 格式对比</h3>
-          <table class="guide-table">
-            <tr><th>格式</th><th>特点</th><th>适用场景</th></tr>
-            <tr><td>JPEG</td><td>有损压缩、体积小</td><td>照片、网页图片</td></tr>
-            <tr><td>PNG</td><td>无损压缩、支持透明</td><td>Logo、图标、截图</td></tr>
-            <tr><td>WebP</td><td>比 JPEG/PNG 更小</td><td>网页优化、节省带宽</td></tr>
-          </table>
-        </div>
-
-        <div class="guide-card">
-          <h3>💡 使用技巧</h3>
-          <ul>
-            <li><strong>HEIC to JPG：</strong>iPhone 拍摄的 HEIC 照片可直接拖入，转换为通用 JPG 格式。</li>
-            <li><strong>批量处理：</strong>一次选择多张图片，设置相同参数后统一转换，节省时间。</li>
-            <li><strong>压缩+转换同步：</strong>调整质量滑块，转换的同时即可完成压缩，无需额外步骤。</li>
-          </ul>
-          <div class="guide-tip">✅ 提示：WebP 格式比 JPEG 体积小约 25%–35%，适合网站图片优化，几乎所有现代浏览器都支持。</div>
-          <div class="guide-warn">⚠️ 注意：HEIC 格式依赖 WebAssembly 解码库（约 1.5 MB），首次加载 HEIC 文件时引擎会下载并缓存。</div>
-        </div>
-
-        <div class="guide-back-top"><a href="#">↑ 回到顶部</a></div>
-      </div>
-
-      <!-- ==================== PDF Converter ==================== -->
-      <div class="guide-section" id="pdf-converter">
-        <h2><span class="ico">📄</span> PDF 转换器 (PDF Converter)</h2>
-        <p style="color:var(--c-text-muted);margin-bottom:24px">三个模式：PDF 转图片 · PDF 转文字 · 图片合并为 PDF。全部在浏览器本地运行。</p>
-
-        <div class="guide-card">
-          <h3>📋 模式一：PDF → 图片</h3>
-          <div class="guide-step"><div class="guide-step-num">1</div><div><strong>选择"PDF → Images"标签</strong> — 默认已选中此模式。</div></div>
-          <div class="guide-step"><div class="guide-step-num">2</div><div><strong>拖入 PDF 文件</strong> — 将 PDF 拖到上传区域或点击浏览选择。</div></div>
-          <div class="guide-step"><div class="guide-step-num">3</div><div><strong>设置渲染倍率</strong> — 数值越高图片越清晰但文件越大。默认 2× 适用于大多数场景，4× 适合打印。</div></div>
-          <div class="guide-step"><div class="guide-step-num">4</div><div><strong>点击 Convert</strong> — PDF 每一页将转换为独立的 PNG 图片，可分别下载或打包下载。</div></div>
-        </div>
-
-        <div class="guide-card">
-          <h3>📋 模式二：PDF → 文字</h3>
-          <div class="guide-step"><div class="guide-step-num">1</div><div><strong>选择"PDF → Text"标签</strong> — 点击标签切换到文字提取模式。</div></div>
-          <div class="guide-step"><div class="guide-step-num">2</div><div><strong>拖入 PDF 文件</strong> — 支持扫描版和电子版 PDF（电子版提取效果更佳）。</div></div>
-          <div class="guide-step"><div class="guide-step-num">3</div><div><strong>点击 Convert</strong> — 系统将提取所有页面的文字内容，显示为可复制的纯文本。</div></div>
-          <div class="guide-warn">⚠️ 扫描版 PDF：如果 PDF 是图片扫描件（没有嵌入文字层），文字提取效果可能不佳。建议先使用高质量扫描或 OCR 预处理。</div>
-        </div>
-
-        <div class="guide-card">
-          <h3>📋 模式三：图片 → PDF</h3>
-          <div class="guide-step"><div class="guide-step-num">1</div><div><strong>选择"Images → PDF"标签</strong> — 点击标签切换到图片合并模式。</div></div>
-          <div class="guide-step"><div class="guide-step-num">2</div><div><strong>拖入多张图片</strong> — 支持 JPG、PNG、WebP 格式。图片将按拖入顺序排列。</div></div>
-          <div class="guide-step"><div class="guide-step-num">3</div><div><strong>调整顺序（可选）</strong> — 在文件列表中拖拽排序，确定 PDF 中页面的先后顺序。</div></div>
-          <div class="guide-step"><div class="guide-step-num">4</div><div><strong>点击 Convert</strong> — 系统自动将所有图片合并为一个 PDF 文件并触发下载。</div></div>
-          <div class="guide-tip">✅ 提示：合并证件照、扫描件或截图时，每张图片对应 PDF 的独立一页，保留原始比例。</div>
-        </div>
-
-        <div class="guide-back-top"><a href="#">↑ 回到顶部</a></div>
-      </div>
-
-      <!-- ==================== Media Converter ==================== -->
-      <div class="guide-section" id="media-converter">
-        <h2><span class="ico">🎬</span> 媒体转换器 (Media Converter)</h2>
-        <p style="color:var(--c-text-muted);margin-bottom:24px">基于 ffmpeg.wasm 引擎，在浏览器中转换音视频。支持 MP4、MOV、WebM、MP3、WAV、M4A 格式。</p>
-
-        <div class="guide-card">
-          <h3>📋 操作步骤</h3>
-          <div class="guide-step"><div class="guide-step-num">1</div><div><strong>拖入媒体文件</strong> — 支持视频（MP4、MOV、WebM）和音频（MP3、WAV、M4A）文件。</div></div>
-          <div class="guide-step"><div class="guide-step-num">2</div><div><strong>选择输出格式</strong> — 从下拉菜单选择目标格式：
-            <table class="guide-table" style="margin-top:8px">
-              <tr><th>选项</th><th>输出类型</th><th>编码</th></tr>
-              <tr><td>Audio → MP3</td><td>纯音频</td><td>MP3 (MPEG Layer 3)</td></tr>
-              <tr><td>Video → MP4 (H.264)</td><td>视频+音频</td><td>H.264 + AAC</td></tr>
-              <tr><td>Audio → WAV</td><td>无损音频</td><td>PCM 16-bit</td></tr>
-              <tr><td>Video → WebM</td><td>视频+音频</td><td>VP8 + Vorbis</td></tr>
-              <tr><td>Audio → M4A (AAC)</td><td>纯音频</td><td>AAC</td></tr>
-            </table>
-          </div></div>
-          <div class="guide-step"><div class="guide-step-num">3</div><div><strong>点击 Convert</strong> — <strong>首次使用</strong>会自动下载 ffmpeg.wasm 引擎（约 30 MB），之后会缓存，无需重复下载。</div></div>
-          <div class="guide-step"><div class="guide-step-num">4</div><div><strong>下载结果</strong> — 转换完成后点击下载按钮保存文件。</div></div>
-        </div>
-
-        <div class="guide-card">
-          <h3>💡 常见用法</h3>
-          <ul>
-            <li><strong>视频提取音频：</strong>将 MP4/MOV 视频拖入，选择「Audio → MP3」即可提取背景音乐或录音。</li>
-            <li><strong>视频格式转换：</strong>MOV → MP4 让视频在更多设备上播放；MP4 → WebM 用于网页嵌入。</li>
-            <li><strong>音频转码：</strong>WAV → MP3 大幅缩小无损音频体积（约 1/10），M4A → MP3 提高兼容性。</li>
-          </ul>
-          <div class="guide-warn">⚠️ 性能注意：大视频文件（> 500 MB）处理可能较慢，建议先压缩或分段处理。ffmpeg.wasm 在移动设备上的处理速度可能受限。</div>
-          <div class="guide-tip">✅ 隐私优势：所有转换在本地完成，视频文件不会上传到任何服务器，特别适合处理私人或敏感视频。</div>
-        </div>
-
-        <div class="guide-back-top"><a href="#">↑ 回到顶部</a></div>
-      </div>
-
-      <!-- ==================== Unit Converter ==================== -->
-      <div class="guide-section" id="unit-converter">
-        <h2><span class="ico">📐</span> 单位换算器 (Unit Converter)</h2>
-        <p style="color:var(--c-text-muted);margin-bottom:24px">四个类别：长度 · 重量 · 温度 · 货币。实时双向换算，输入即出结果。</p>
-
-        <div class="guide-card">
-          <h3>📋 操作步骤</h3>
-          <div class="guide-step"><div class="guide-step-num">1</div><div><strong>选择类别</strong> — 点击顶部标签切换：Length（长度）、Weight（重量）、Temperature（温度）、Currency（货币）。</div></div>
-          <div class="guide-step"><div class="guide-step-num">2</div><div><strong>选择单位</strong> — 在左右两个下拉菜单中分别选择「From（输入单位）」和「To（输出单位）」。支持快速互换（点 ⇄ 按钮）。</div></div>
-          <div class="guide-step"><div class="guide-step-num">3</div><div><strong>输入数值</strong> — 在左边输入框输入数值，右侧会实时显示换算结果。也可以在右边输入，左边会自动回算。</div></div>
-        </div>
-
-        <div class="guide-card">
-          <h3>📊 支持的单位</h3>
-          <table class="guide-table">
-            <tr><th>类别</th><th>支持的单位</th></tr>
-            <tr><td>Length（长度）</td><td>Meter, Kilometer, Centimeter, Millimeter, Mile, Yard, Foot, Inch</td></tr>
-            <tr><td>Weight（重量）</td><td>Kilogram, Gram, Milligram, Pound, Ounce, Ton (metric)</td></tr>
-            <tr><td>Temperature（温度）</td><td>Celsius (°C), Fahrenheit (°F), Kelvin (K)</td></tr>
-            <tr><td>Currency（货币）</td><td>USD, EUR, GBP, JPY, CNY, KRW, AUD, CAD 等主流货币（实时汇率）</td></tr>
-          </table>
-        </div>
-
-        <div class="guide-card">
-          <h3>💡 使用技巧</h3>
-          <ul>
-            <li><strong>双向换算：</strong>左右两个输入框均可输入，系统自动检测并在另一边输出结果。</li>
-            <li><strong>快速互换：</strong>点击中间的 ⇄ 按钮可将输入/输出单位互换，无需手动重新选择。</li>
-            <li><strong>货币实时汇率：</strong>货币换算使用公开汇率 API 获取实时数据，确保换算准确性。</li>
-          </ul>
-          <div class="guide-warn">⚠️ 货币汇率说明：汇率数据来自公开 API，仅供参考，实际交易以银行实时汇率为准。首次加载货币数据可能需要网络请求。</div>
-        </div>
-
-        <div class="guide-back-top"><a href="#">↑ 回到顶部</a></div>
-      </div>
-
-      <!-- ==================== Compress Tool ==================== -->
-      <div class="guide-section" id="compress-tool">
-        <h2><span class="ico">🗜️</span> 文件压缩工具 (Compress Tool)</h2>
-        <p style="color:var(--c-text-muted);margin-bottom:24px">压缩图片和 PDF 文件，在保持质量的同时大幅减小文件体积。本地处理，不上传。</p>
-
-        <div class="guide-card">
-          <h3>📋 操作步骤</h3>
-          <div class="guide-step"><div class="guide-step-num">1</div><div><strong>选择文件类型</strong> — 点击顶部标签选择「Images（图片）」或「PDF」模式。</div></div>
-          <div class="guide-step"><div class="guide-step-num">2</div><div><strong>拖入文件</strong> — 将图片或 PDF 文件拖到上传区域。图片支持批量压缩。</div></div>
-          <div class="guide-step"><div class="guide-step-num">3</div><div><strong>调整压缩级别</strong> — 拖动滑块设置压缩强度（10%–95%）。数值越低压缩越激进、文件越小但质量越差。<br/>
-            <span style="font-size:12px;color:var(--c-text-muted)">推荐：图片 70% | PDF 不涉及此参数（使用内置优化算法）</span>
-          </div></div>
-          <div class="guide-step"><div class="guide-step-num">4</div><div><strong>点击 Compress</strong> — 处理完成后显示原始大小 vs 压缩后大小的对比，点击下载。</div></div>
-        </div>
-
-        <div class="guide-card">
-          <h3>📊 压缩效果参考</h3>
-          <table class="guide-table">
-            <tr><th>压缩级别</th><th>图片效果</th><th>体积缩减</th></tr>
-            <tr><td>90%</td><td>几乎无损</td><td>约 10%–20%</td></tr>
-            <tr><td>70% (推荐)</td><td>肉眼难辨差异</td><td>约 40%–60%</td></tr>
-            <tr><td>50%</td><td>轻微画质损失</td><td>约 60%–75%</td></tr>
-            <tr><td>30%</td><td>明显压缩痕迹</td><td>约 75%–85%</td></tr>
-            <tr><td>10%</td><td>画质较差</td><td>约 85%+</td></tr>
-          </table>
-        </div>
-
-        <div class="guide-card">
-          <h3>💡 使用技巧</h3>
-          <ul>
-            <li><strong>网站图片优化：</strong>使用 70% 级别压缩 JPEG/PNG 图片，兼顾质量和加载速度。</li>
-            <li><strong>PDF 瘦身：</strong>适合压缩包含大量高分辨率图片的 PDF 文件，文本部分不受影响。</li>
-            <li><strong>批量压缩：</strong>图片模式下可一次拖入多张，统一设置参数后批量处理。</li>
-          </ul>
-          <div class="guide-tip">✅ 提示：压缩前可先用图片转换器将图片转为 WebP 格式，再压缩，可获得更小的文件体积。</div>
-          <div class="guide-warn">⚠️ 注意：PDF 压缩使用 pdf-lib 库进行优化，主要减小图片资源体积。如果 PDF 仅是纯文本，压缩效果有限。</div>
-        </div>
-
-        <div class="guide-back-top"><a href="#">↑ 回到顶部</a></div>
-      </div>
-
     </div>
   </section>
   </main>
@@ -305,13 +122,13 @@
         <li><a href="/tools/compress-tool.html">Compress Tool</a></li>
       </ul></div>
       <div><h4>Help</h4><ul>
-        <li><a href="/guide.html">使用说明</a></li>
+        <li><a href="/guide.html">User Guide</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul></div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span data-year>2026</span> easyformatswap. All rights reserved.</span>
-      <span>Processed locally in your browser · We never upload your files.</span>
+      <span>&copy; <span data-year>2026</span> easyformatswap. All rights reserved.</span>
+      <span>Processed locally in your browser &middot; We never upload your files.</span>
     </div>
   </footer>
 
