@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Converter Guide — Convert Video & Audio MP4 MP3 WebM WAV M4A | easyformatswap</title>
+  <meta name="description" content="Learn how to convert video and audio files between MP4, MOV, WebM, MP3, WAV, and M4A formats. Step-by-step guide with format comparison and pro tips." />
+  <link rel="canonical" href="https://easyformatswap.com/guide/media-converter.html" />
+  <meta property="og:title" content="Media Converter Guide — Convert Video & Audio Formats" />
+  <meta property="og:description" content="Learn how to convert video and audio files between MP4, MOV, WebM, MP3, WAV, and M4A formats — all in your browser, powered by ffmpeg.wasm." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://easyformatswap.com/guide/media-converter.html" />
+  <meta property="og:site_name" content="easyformatswap" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Media Converter Guide — Convert Video & Audio Formats" />
+  <meta name="twitter:description" content="Learn how to convert video and audio files between MP4, MOV, WebM, MP3, WAV, and M4A formats — all in your browser." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Convert Media Files Online",
+    "description": "Convert video and audio files between MP4, MP3, WebM, WAV, M4A, and MOV formats using easyformatswap's in-browser ffmpeg.wasm-powered converter.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Drag in a media file",
+        "text": "Upload a video (MP4, MOV, WebM) or audio (MP3, WAV, M4A) file by dragging it onto the upload area."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Choose an output format",
+        "text": "Select the target format from the dropdown: MP3, MP4 (H.264), WAV, WebM, or M4A (AAC)."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Click Convert",
+        "text": "The ffmpeg.wasm engine processes your file locally. On first use, it downloads and caches the engine (~30 MB)."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Download your file",
+        "text": "Once conversion completes, click the download button to save the output file."
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <style>
+    .guide-section { scroll-margin-top: 80px; margin-bottom: 48px; }
+    .guide-section h2 { font-size: 28px; margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
+    .guide-section h2 .ico { font-size: 32px; }
+    .guide-card { background: #fff; border: 1px solid var(--c-border); border-radius: 12px; padding: 28px 32px; margin-bottom: 20px; }
+    .guide-card h3 { font-size: 18px; margin-bottom: 10px; color: var(--c-primary); }
+    .guide-card p,.guide-card li { font-size: 14px; line-height: 1.8; color: var(--c-text); margin-bottom: 6px; }
+    .guide-card ul,.guide-card ol { padding-left: 20px; margin-bottom: 12px; }
+    .guide-card li { margin-bottom: 4px; }
+    .guide-step { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+    .guide-step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--c-primary); color: #fff; display: grid; place-items: center; font-size: 14px; font-weight: 700; flex: none; margin-top: 2px; }
+    .guide-tip { background: #F0FDF4; border-left: 4px solid #22C55E; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 13px; color: #166534; }
+    .guide-warn { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 13px; color: #92400E; }
+    .guide-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+    .guide-table th,.guide-table td { border: 1px solid var(--c-border); padding: 8px 12px; text-align: left; }
+    .guide-table th { background: var(--c-bg-soft); font-weight: 600; }
+    .breadcrumb { font-size: 13px; color: var(--c-text-muted); margin-bottom: 8px; }
+    .breadcrumb a { color: var(--c-primary); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/index.html"><span class="logo">⚡</span><span>easyformatswap</span></a>
+      <nav class="nav-links" data-nav-links aria-label="Primary">
+        <a href="/index.html">Home</a>
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="/tools/image-converter.html" aria-haspopup="true">Tools ▾</a>
+          <div class="dropdown-menu">
+            <a href="/tools/image-converter.html"><span class="ico">🖼️</span> Image Converter</a>
+            <a href="/tools/pdf-converter.html"><span class="ico">📄</span> PDF Converter</a>
+            <a href="/tools/media-converter.html"><span class="ico">🎬</span> Media Converter</a>
+            <a href="/tools/unit-converter.html"><span class="ico">📐</span> Unit Converter</a>
+            <a href="/tools/compress-tool.html"><span class="ico">🗜️</span> Compress Tool</a>
+          </div>
+        </div>
+        <a href="/guide.html" data-guide-link>User Guide</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">☰</button>
+    </div>
+    <div class="ad-banner-top">
+      <div class="container" style="padding:8px 24px">
+        <aside class="ad-slot ad-leaderboard" data-ad-format="leaderboard" data-ad-label="Top banner — connect Google AdSense"></aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/guide.html">User Guide</a> &rsaquo; Media Converter Guide
+      </div>
+      <div class="sec-head" style="text-align:left;margin:0 0 8px;max-width:none">
+        <span class="eyebrow">How-To Guide</span>
+        <h2><span style="font-size:36px">🎬</span> Media Converter Guide</h2>
+        <p>Powered by ffmpeg.wasm, convert video and audio files directly in your browser. Supports MP4, MOV, WebM, MP3, WAV, and M4A formats.</p>
+      </div>
+
+      <div class="guide-card">
+        <h3>Step-by-Step Instructions</h3>
+        <div class="guide-step"><div class="guide-step-num">1</div><div><strong>Drag in a media file</strong> &mdash; Supports video (MP4, MOV, WebM) and audio (MP3, WAV, M4A) files.</div></div>
+        <div class="guide-step"><div class="guide-step-num">2</div><div><strong>Choose an output format</strong> &mdash; Select your target from the dropdown:
+          <table class="guide-table" style="margin-top:8px">
+            <tr><th>Option</th><th>Output Type</th><th>Codec</th></tr>
+            <tr><td>Audio &rarr; MP3</td><td>Audio only</td><td>MP3 (MPEG Layer 3)</td></tr>
+            <tr><td>Video &rarr; MP4 (H.264)</td><td>Video + Audio</td><td>H.264 + AAC</td></tr>
+            <tr><td>Audio &rarr; WAV</td><td>Lossless audio</td><td>PCM 16-bit</td></tr>
+            <tr><td>Video &rarr; WebM</td><td>Video + Audio</td><td>VP8 + Vorbis</td></tr>
+            <tr><td>Audio &rarr; M4A (AAC)</td><td>Audio only</td><td>AAC</td></tr>
+          </table>
+        </div></div>
+        <div class="guide-step"><div class="guide-step-num">3</div><div><strong>Click Convert</strong> &mdash; <strong>First-time use:</strong> the ffmpeg.wasm engine (approx. 30 MB) downloads automatically. It&rsquo;s cached for subsequent use.</div></div>
+        <div class="guide-step"><div class="guide-step-num">4</div><div><strong>Download the result</strong> &mdash; Once processing finishes, click the download button to save your converted file.</div></div>
+      </div>
+
+      <div class="guide-card">
+        <h3>Common Use Cases</h3>
+        <ul>
+          <li><strong>Extract audio from video:</strong> Drop an MP4/MOV file and select &ldquo;Audio &rarr; MP3&rdquo; to extract background music or voice recordings.</li>
+          <li><strong>Convert video formats:</strong> MOV &rarr; MP4 for broader device compatibility; MP4 &rarr; WebM for web embedding.</li>
+          <li><strong>Audio transcoding:</strong> WAV &rarr; MP3 shrinks lossless audio roughly 10&times;; M4A &rarr; MP3 improves device compatibility.</li>
+        </ul>
+        <div class="guide-warn">&#x26A0;&#xFE0F; Performance note: Large video files (over 500 MB) may process slowly. Consider compressing or splitting large files first. ffmpeg.wasm performance may be limited on mobile devices.</div>
+        <div class="guide-tip">&#x2705; Privacy advantage: All conversions run locally. Video files are never uploaded to any server, making this ideal for private or sensitive content.</div>
+      </div>
+
+      <div style="margin-top:32px">
+        <a href="/tools/media-converter.html" class="btn btn-primary" style="text-decoration:none">Open Media Converter Tool &rarr;</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="padding-top:32px">
+      <aside class="ad-slot ad-leaderboard" data-ad-format="leaderboard" data-ad-label="Footer banner — connect Google AdSense"></aside>
+    </div>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="/index.html" style="color:#fff"><span class="logo">⚡</span><span>easyformatswap</span></a>
+        <p style="margin-top:12px;color:#94A3B8;font-size:14px;max-width:300px">Free, private format converters that run entirely in your browser.</p>
+      </div>
+      <div><h4>Tools</h4><ul>
+        <li><a href="/tools/image-converter.html">Image Converter</a></li>
+        <li><a href="/tools/pdf-converter.html">PDF Converter</a></li>
+        <li><a href="/tools/media-converter.html">Media Converter</a></li>
+        <li><a href="/tools/unit-converter.html">Unit Converter</a></li>
+        <li><a href="/tools/compress-tool.html">Compress Tool</a></li>
+      </ul></div>
+      <div><h4>Help</h4><ul>
+        <li><a href="/guide.html">User Guide</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span data-year>2026</span> easyformatswap. All rights reserved.</span>
+      <span>Processed locally in your browser &middot; We never upload your files.</span>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>
