@@ -1,0 +1,149 @@
+/* ============================================================
+   Design Tokens
+   ============================================================ */
+:root {
+  /* Brand / primary */
+  --c-primary: #2563EB;
+  --c-primary-600: #1D4ED8;
+  --c-primary-400: #3B82F6;
+  --c-primary-soft: #EFF6FF;
+
+  /* Backgrounds */
+  --c-bg: #F8FAFC;
+  --c-surface: #FFFFFF;
+
+  /* Text */
+  --c-text: #0F172A;
+  --c-text-muted: #475569;
+  --c-text-faint: #94A3B8;
+
+  /* Functional */
+  --c-success: #10B981;
+  --c-danger: #EF4444;
+  --c-warning: #F59E0B;
+
+  /* Borders / lines */
+  --c-border: #E2E8F0;
+  --c-border-strong: #CBD5E1;
+
+  /* Ad slot */
+  --c-ad-bg: #F1F5F9;
+  --c-ad-border: #E2E8F0;
+
+  /* Radius */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-full: 999px;
+
+  /* Shadow */
+  --sh-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --sh-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --sh-lg: 0 18px 50px rgba(15, 23, 42, 0.12);
+  --sh-brand: 0 12px 30px rgba(37, 99, 235, 0.25);
+
+  /* Spacing scale */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+
+  /* Layout */
+  --maxw: 1200px;
+  --nav-h: 68px;
+
+  /* Typography */
+  --font: 'Roboto', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+}
+
+/* ============================================================
+   Reset & base
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--c-text);
+  background: var(--c-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 { margin: 0; font-weight: 700; line-height: 1.2; color: var(--c-text); }
+h1 { font-size: 36px; letter-spacing: -0.02em; }
+h2 { font-size: 28px; letter-spacing: -0.01em; }
+h3 { font-size: 20px; font-weight: 500; }
+p { margin: 0; }
+
+a { color: var(--c-primary); text-decoration: none; transition: color .2s ease; }
+a:hover { color: var(--c-primary-600); }
+
+img { max-width: 100%; display: block; }
+
+button { font-family: inherit; cursor: pointer; }
+
+/* ============================================================
+   Layout helpers
+   ============================================================ */
+.container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 var(--s-5); }
+
+.section { padding: var(--s-8) 0; }
+.section-sm { padding: var(--s-7) 0; }
+
+.grid { display: grid; gap: var(--s-5); }
+.grid-cards { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+
+.stack { display: flex; flex-direction: column; gap: var(--s-4); }
+.row { display: flex; gap: var(--s-3); align-items: center; }
+.between { justify-content: space-between; }
+.wrap { flex-wrap: wrap; }
+.center { align-items: center; justify-content: center; }
+
+.muted { color: var(--c-text-muted); }
+.faint { color: var(--c-text-faint); }
+.text-center { text-align: center; }
+
+/* Eyebrow / kicker */
+.eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--c-primary);
+  background: var(--c-primary-soft);
+  padding: 6px 14px;
+  border-radius: var(--r-full);
+}
+
+/* Tool page two-column layout: content + sidebar ad */
+.tool-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--s-6);
+  align-items: start;
+}
+@media (max-width: 980px) {
+  .tool-layout { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+.hidden { display: none !important; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
